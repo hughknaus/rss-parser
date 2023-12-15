@@ -1,11 +1,12 @@
 {
-  "name": "rss-parser",
-  "version": "3.13.0",
+  "name": "rss-parser-fixed",
+  "version": "4.0.0",
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
     "test": "mocha --reporter-option maxDiffSize=0 --exit",
-    "build": "./scripts/build.sh"
+    "build": "./scripts/build.sh",
+    "start": "node reader.js"
   },
   "author": "Bobby Brennan",
   "license": "MIT",
@@ -34,6 +35,7 @@
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
+    "console-log-colors": "^0.4.0",
     "entities": "^4.5.0",
     "puppeteer": "^21.6.1",
     "rss-parser": "^3.13.0",
