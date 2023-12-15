@@ -1,17 +1,11 @@
 var webpack = require("webpack");
 var timers = require("timers");
-var LodashModulePlugin = require('lodash-webpack-plugin');
 
 module.exports = {
   entry: {
     "rss-parser": "./index.js"
   },
-  plugins: [
-    new LodashModulePlugin({
-      'collections': true,
-      'paths': true
-    }),
-  ],
+  plugins: [],
   output: {
     path: __dirname,
     filename: "dist/[name].js",
